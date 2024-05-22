@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+    
+<head>
+<link rel="stylesheet" href="/styles.css">
+<title>Page Title</title>
+</head>
+<body>
+<h1 class="beautiful-header">My First Heading</h1>
+<p class="asdzxc">My first paragraph.</p>
+<header class="button">
+    <nav>
+        <ul>
+            <li><a href="add_card">Insert</a></li>
+            <li><a href="path2.html">Button 2</a></li>
+            <li><a href="path3.html">Button 3</a></li>
+            <li><a href="path4.html">Button 4</a></li>
+            <li><a href="path5.html">Button 5</a></li>
+            <li><a href="path6.html">Button 6</a></li>
+            <li><a href="path7.html">Button 7</a></li>
+            <li><a href="path8.html">Button 8</a></li>
+        </ul>
+    </nav>
+</header>
+<table action="/update" method="post">
+    <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    {%for x in myresult:%}
+    <tr>
+        <td>{% print(x[0]) %}</td>
+        <td>{% print(x[1]) %}</td>
+        <td><a href ="/update?id={% print(x[0]) %}">Update</a></td>
+        <td><a href="/delete?id={% print(x[0]) %}" id="x">Delete</a></td>
+    </tr>
+    {% endfor %}     
+
+</table>
+</body>
+</html> 

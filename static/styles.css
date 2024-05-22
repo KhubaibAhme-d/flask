@@ -1,0 +1,71 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+h1 {
+   color: navy;
+   margin-left: 20px; }
+
+body {
+  background-image: url("picture.jpg");
+  background-size: 100% 
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:nth-child(odd){background-color: #f2f2f26e;}
+tr:hover {background-color: #ddd;}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.beautiful-header {
+  background-color: #e61e1e;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #ddd; /* Adding a subtle border */
+  color: #ffffff
+}
+.asdzxc {
+  font-family: "Arial", sans-serif;
+  color: rgb(240, 236, 9);
+  font-size: 18px;
+  margin-top: 0;
+  text-align: center;
+}
+.button {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; /* Align the buttons horizontally */
+}
+
+nav ul li {
+  display: inline-block; /* Display list items horizontally */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #337DFF;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #2354B8;
+  color: #fff;
+}

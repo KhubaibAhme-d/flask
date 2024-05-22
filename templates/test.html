@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Form</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="java.js"></script>
+</head>
+<body>
+    <style>
+        .error-message {
+            color: red;
+        }
+    </style>
+    
+    <h2>login</h2>
+    <form action="/test" id="login" method="post">
+        <label for="input_data">userName</label><br>
+        <input type="text" id="usr" name="userName"><br><br>
+        <input id="buttt" type="submit" value="Submit"><br><br>
+        <a href="/signup" class="button">Sign Up</a>
+    </form>
+</body>
+</html>
